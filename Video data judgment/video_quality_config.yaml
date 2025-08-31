@@ -1,0 +1,7 @@
+# 1. 原始 CSV 中必须出现的列名
+columns:
+  duration:  "video_duration_sec"
+  views:     "video_view_count"
+  shares:    "video_share_count"
+  comments:  "video_comment_count"
+

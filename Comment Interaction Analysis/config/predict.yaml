@@ -1,0 +1,13 @@
+csv:
+  input:  "data/data.csv"
+  output: "results/data/results.csv"
+
+
+model:
+  path: "results/metrics/quality_score_model.pkl"
+
+columns:
+  - log_owner_engagement_share
+  - log_response_rate
+  - owner_comments_total
+  - audience_comments_total

@@ -1,0 +1,23 @@
+# ========== path ==========
+input_csv: "F:/tiktok/最终提交/情绪/youtube-comments-sentiment-train.csv"
+cache_sqlite: "sentiment_cache.sqlite"
+weights_yaml: "F:/tiktok/code/weights.yaml"
+output_suffix: "_creator_ranking.xlsx"   
+
+# ========== model ==========
+model_name: "AmaanP314/youtube-xlm-roberta-base-sentiment-multilingual"
+max_length: 128
+batch_size: 256          # GPU batch
+device: "cuda"           # cpu / cuda / cuda:0
+
+
+score_range:
+  min: 1
+  max: 100
+
+
+weights:
+  SentimentAvg: 0.35
+  PosRatio: 0.25
+  InteractionSum: 0.25
+  RetentionRate: 0.15

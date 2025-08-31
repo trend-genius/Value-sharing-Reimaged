@@ -1,0 +1,5 @@
+weights:
+  SentimentAvg: 0.35
+  PosRatio: 0.25
+  InteractionSum: 0.25
+  RetentionRate: 0.15
